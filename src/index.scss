@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(./assets/fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url(./assets/fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(./assets/fonts/SpaceGrotesk-Bold.ttf);
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+.mx {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pad {
+  padding: 0 5rem;
+}
+
+.text-coloring {
+  // background: linear-gradient(to right, #293eff 0%, #8f00ff 45%, #ff7a00 100%);
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  background: radial-gradient(
+    2174.18% 106.55% at 3.23% 25.96%,
+    #293eff 0%,
+    #2d3cff 0.01%,
+    #6619ff 27.49%,
+    #8506ff 42.6%,
+    #8f00ff 47.05%,
+    #9b0ee2 53.01%,
+    #b025b3 62.91%,
+    #cd4471 76.45%,
+    #ea6330 90%,
+    #f56f17 95.2%,
+    #ff7a00 100%,
+    #0047ff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root {
+  --text-primary: #fff;
+  --text-secondary: #aaa;
+  --text-tertiary: #999;
+  --footer-primary-text: #8c8c8c;
+  --footer-secondary-text: rgba(140, 140, 140, 0.6);
+  --green: #00a140;
+  --background-one: #0a0a0a;
+  --background-two: #0e0e0e;
+  --background-three: #141414;
+  --background-four: #0d0d0d;
+  --background-five: #000;
+  --border: #1e1e1e;
+}
+
+h1 {
+  color: var(--text-primary);
+  font-family: "SpaceGrotesk-Bold";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  @media (max-width: 700px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+h2 {
+  color: var(--text-primary);
+  font-family: "Gilroy-Medium";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  @media (max-width: 700px) {
+    font-size: 32px;
+    letter-spacing: -1.28px;
+  }
+}
+h3 {
+  color: var(--text-tertiary);
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+}
+
+p {
+  color: var(--text-tertiary);
+  font-family: "Gilroy-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 0.28px;
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+}
+
+span {
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(
+    --dehustle,
+    radial-gradient(
+      2174.18% 106.55% at 3.23% 25.96%,
+      #293eff 0%,
+      #2d3cff 0.01%,
+      #6619ff 27.49%,
+      #8506ff 42.6%,
+      #8f00ff 47.05%,
+      #9b0ee2 53.01%,
+      #b025b3 62.91%,
+      #cd4471 76.45%,
+      #ea6330 90%,
+      #f56f17 95.2%,
+      #ff7a00 100%,
+      #0047ff 100%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

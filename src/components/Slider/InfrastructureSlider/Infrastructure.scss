@@ -1,0 +1,20 @@
+.custom-paging-slider {
+  width: 50%;
+  .image-container {
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+  }
+  .images {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}

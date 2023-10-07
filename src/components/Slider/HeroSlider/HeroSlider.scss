@@ -1,0 +1,93 @@
+.heroslider-container {
+  .heroslider-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    .image-container:nth-child(1) {
+      img {
+        width: 600px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+      }
+      clip-path: polygon(0 0, 100% 0, 92% 99%, 9% 100%);
+      position: relative;
+      &.prev {
+        animation: rotate-current 5s linear infinite;
+        transform-origin: center;
+      }
+      .image {
+        position: absolute;
+        background-color: #0a0a0a;
+        opacity: 0.7;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .image-container:nth-child(2) {
+      img {
+        width: 500px;
+        height: 260px;
+        object-fit: cover;
+        object-position: center;
+      }
+      &.current {
+        animation: rotate-current 5s linear infinite;
+        transform-origin: center;
+      }
+    }
+    .image-container:nth-child(3) {
+      clip-path: polygon(8% 0, 93% 0, 100% 100%, 0 99%);
+      position: relative;
+      img {
+        width: 600px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .image {
+        position: absolute;
+        background-color: #0a0a0a;
+        opacity: 0.7;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+      &.next {
+        animation: rotate-current 5s linear infinite;
+        transform-origin: center;
+      }
+    }
+  }
+
+  @keyframes flip-prev {
+    from {
+      transform: perspective(1000px) rotateY(-180deg);
+    }
+    to {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+  }
+
+  @keyframes flip-next {
+    from {
+      transform: perspective(1000px) rotateY(180deg);
+    }
+    to {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+  }
+  @keyframes rotate-current {
+    from {
+      transform: perspective(1000px) rotateY(180deg);
+    }
+    to {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+  }
+}
