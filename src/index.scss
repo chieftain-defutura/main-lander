@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Gilroy-Medium";
-  src: url(./assets/fonts/Gilroy-Medium.ttf);
+  src: url("./assets/fonts/Gilroy-Medium.ttf");
 }
 @font-face {
   font-family: "Gilroy-Regular";
-  src: url(./assets/fonts/Gilroy-Regular.ttf);
+  src: url("./assets/fonts/Gilroy-Regular.ttf");
 }
 @font-face {
   font-family: "Gilroy-SemiBold";
-  src: url(./assets/fonts/Gilroy-SemiBold.ttf);
+  src: url("./assets/fonts/Gilroy-SemiBold.ttf");
 }
 @font-face {
   font-family: "SpaceGrotesk-Bold";
-  src: url(./assets/fonts/SpaceGrotesk-Bold.ttf);
+  src: url("./assets/fonts/SpaceGrotesk-Bold.ttf");
 }
 html {
   font-size: 62.5%;
@@ -34,7 +34,15 @@ body {
 }
 
 .pad {
-  padding: 0 5rem;
+  padding: 0 160px;
+  @media (max-width: 850px) {
+    padding: 32px;
+  }
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
 }
 
 .text-coloring {
@@ -135,6 +143,7 @@ span {
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
+  width: fit-content;
   background: var(
     --dehustle,
     radial-gradient(
@@ -156,6 +165,7 @@ span {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   @media (max-width: 700px) {
     font-size: 12px;
   }

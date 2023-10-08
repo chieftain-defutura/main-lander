@@ -1,13 +1,15 @@
 import React from "react";
 import Impacts from "./components/Impacts";
-import InfrasctructureSlider from "./components/Slider/InfrastructureSlider";
-import HeroSlider from "./components/Slider/HeroSlider";
+import Origin from "./components/Origin";
+// import InfrasctructureSlider from "./components/Slider/InfrastructureSlider";
+// import HeroSlider from "./components/Slider/HeroSlider";
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className="mx">
+    <div>
       <Impacts />
-      <HeroSlider />
+      <Origin />
+      {/* <HeroSlider /> */}
     </div>
   );
 };
