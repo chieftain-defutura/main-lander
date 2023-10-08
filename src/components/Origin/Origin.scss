@@ -1,6 +1,11 @@
 .origin-wrapper {
-  background: var(--background-one);
-  padding: 64px 0;
+  background: var(--background-three);
+
+  .origin {
+    background: var(--background-one);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    padding: 64px 0;
+  }
   .origin-container {
     display: flex;
     flex-direction: column;
