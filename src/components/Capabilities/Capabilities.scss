@@ -1,0 +1,163 @@
+.capabilities-wrapper {
+  background: var(--background-one);
+  padding: 64px 0;
+  .capabilities-container {
+    h4 {
+      text-align: center;
+    }
+    p {
+      padding: 24px 0;
+      text-align: center;
+    }
+  }
+  .capabilities-content {
+    border: 1px solid var(--border);
+    padding: 32px 60px;
+    h2 {
+      text-align: center;
+      font-weight: 100;
+    }
+    .grid-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 24px 0;
+      gap: 24px;
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        background: var(--background-three);
+        backdrop-filter: blur(5px);
+        .student-img {
+          img {
+            max-width: 528px;
+            width: 100%;
+            max-height: 238px;
+            height: 100%;
+          }
+        }
+        h3 {
+          text-align: center;
+          font-size: 20px;
+          padding-top: 16px;
+        }
+        .classes-content {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 32px;
+          padding: 16px 24px;
+
+          h4 {
+            font-size: 24px;
+            color: var(--text-primary);
+            letter-spacing: -1.44px;
+            font-family: "Gilroy-SemiBold";
+            text-align: center;
+          }
+          p {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .know-more-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      p {
+        color: var(--green);
+        font-size: 20px;
+        font-family: "Gilroy-SemiBold";
+      }
+    }
+  }
+  .professional-wrapper {
+    border: 1px solid var(--border);
+    padding: 32px 60px;
+    margin-top: 100px;
+    h2 {
+      font-weight: 100;
+      text-align: center;
+    }
+    .professional-grid-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 0;
+      @media (max-width: 992px) {
+        display: block;
+      }
+      .image {
+        img {
+          max-width: 440px;
+          width: 100%;
+          max-height: 340px;
+          height: 100%;
+        }
+      }
+      .second-content {
+        background: var(--background-three);
+        padding: 24px;
+        max-width: 440px;
+        width: 100%;
+        max-height: 340px;
+        height: 100%;
+        .head {
+          h4 {
+            letter-spacing: -0.96px;
+            font-size: 24px;
+            color: var(--text-primary);
+            font-family: "Gilroy-SemiBold";
+          }
+          p {
+            padding: 24px 0;
+          }
+        }
+        .grid-items {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .enroll-now {
+          border: 1px solid var(--green);
+          padding: 12px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 24px;
+          button {
+            border: none;
+            outline: none;
+            background: transparent;
+            color: var(--green);
+            text-align: center;
+          }
+        }
+      }
+    }
+    .know-more-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      p {
+        color: var(--green);
+        font-size: 20px;
+        font-family: "Gilroy-SemiBold";
+      }
+    }
+  }
+  .flex-item {
+    gap: 8px;
+    p {
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 12px;
+    }
+    h3 {
+      color: var(--text-primary);
+    }
+  }
+}

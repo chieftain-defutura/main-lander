@@ -85,6 +85,10 @@ body {
   --border: #1e1e1e;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   color: var(--text-primary);
   font-family: "SpaceGrotesk-Bold";
