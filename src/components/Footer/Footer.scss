@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+    gap: 56px;
     @media (max-width: 998px) {
       grid-template-columns: repeat(3, 1fr);
     }
