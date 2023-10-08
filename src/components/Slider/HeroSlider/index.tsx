@@ -58,10 +58,21 @@ const HeroSlider = () => {
         </div>
       </div>
 
-      <div className="images">
+      <div className="slick-dots">
         {data.map((f, i) => (
-          <div key={i} onClick={() => setCurrentPage(i)}>
-            <div>{i}</div>
+          <div
+            style={{
+              background: currentPage === i ? "white" : "gray",
+              padding: currentPage === i ? "8px" : "4px",
+              fontSize: "0px",
+              borderRadius: "50%",
+              margin: "4px",
+              width: "8px",
+            }}
+            key={i}
+            onClick={() => setCurrentPage(i)}
+          >
+            {i}
           </div>
         ))}
       </div>

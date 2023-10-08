@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Arrow } from "../../assets/icons/Arrow 2.svg";
+import { ReactComponent as Arrow } from "../../assets/icons/Arrow.svg";
 import { ReactComponent as Seat } from "../../assets/icons/seat-svgrepo-com 1.svg";
 import { ReactComponent as StopWatch } from "../../assets/icons/stopwatch-svgrepo-com 1.svg";
 import { ReactComponent as BooksBook } from "../../assets/icons/books-book-svgrepo-com 1.svg";
