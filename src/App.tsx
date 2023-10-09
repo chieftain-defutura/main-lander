@@ -6,6 +6,7 @@ import Capabilities from "./components/Capabilities";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import SuccessStories from "./components/SuccessStories";
 // import InfrasctructureSlider from "./components/Slider/InfrastructureSlider";
 // import HeroSlider from "./components/Slider/HeroSlider";
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       <Origin />
       <OurVision />
       <Capabilities />
+      <SuccessStories />
       <Footer />
       {/* <HeroSlider /> */}
     </div>

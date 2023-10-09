@@ -26,6 +26,7 @@ html {
 html,
 body {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 .mx {
   max-width: 1500px;
@@ -83,6 +84,38 @@ body {
   --background-four: #0d0d0d;
   --background-five: #000;
   --border: #1e1e1e;
+}
+
+button.slick-arrow.slick-next::before {
+  display: none;
+}
+button.slick-arrow.slick-prev::before {
+  display: none;
+}
+
+.slick-dots {
+  margin: 0 !important;
+}
+.slick-dots li {
+  margin: 0 !important;
+}
+
+.slick-dots li button {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-size: 0px;
+}
+
+.slick-dots li button::before {
+  color: #565555 !important;
+  width: 100px !important;
+  height: 5px !important;
+  font-size: 9px;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #ffffff !important;
+  font-size: 12px;
 }
 
 a {
