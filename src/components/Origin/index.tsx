@@ -23,6 +23,10 @@ const Origin: React.FC = () => {
             </p>
           </div>
 
+          <div className="responsive-second-item">
+            <video src={InstituteVideo} controls></video>
+          </div>
+
           <div className="origin-content">
             <div className="first-item">
               <div className="bodrer-left"></div>

@@ -79,7 +79,7 @@ const Capabilities: React.FC = () => {
           <h2>Professional academy.</h2>
           <div className="professional-grid-item">
             <div className="image">
-              <img src={ImageFive} alt="image" />
+              <img src={ImageFive} alt="" />
             </div>
             <div className="second-content">
               <div className="head">
@@ -99,7 +99,7 @@ const Capabilities: React.FC = () => {
                     <h3>15 seats only</h3>
                   </div>
                 </div>
-                <div className="flex-item">
+                <div className="flex-item responsive">
                   <div>
                     <StopWatch />
                   </div>

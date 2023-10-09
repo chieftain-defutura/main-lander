@@ -1,8 +1,9 @@
 import React from "react";
-import "./Header.scss";
 import Logo from "../../assets/logos/header-logo.png";
 import Access from "../../assets/icons/access.png";
-const Header = () => {
+import "./Header.scss";
+
+const Header: React.FC = () => {
   return (
     <div className="header-container">
       <div className="mx">

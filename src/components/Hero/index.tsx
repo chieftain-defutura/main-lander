@@ -3,11 +3,10 @@ import Arrow from "../../assets/icons/Arrow.svg";
 import { ReactComponent as Instagram } from "../../assets/icons/instagram.svg";
 import { ReactComponent as Linkedin } from "../../assets/icons/linkedin.svg";
 import { ReactComponent as Twitter } from "../../assets/icons/twitter.svg";
-
-import "./Hero.scss";
 import HeroSlider from "../Slider/HeroSlider";
+import "./Hero.scss";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const render = (
     <div className="social-media">
       <p>Follow us on</p>
@@ -33,10 +32,12 @@ const Hero = () => {
                 path towards a brighter and more promising future. Get trained
                 from now for your upgraded tomorrow. 
               </p>
-              <div className="enroll">
-                <h5>Enroll now</h5>
-                <img src={Arrow} alt="" />
-              </div>
+              <a href="/">
+                <div className="enroll">
+                  <h5>Enroll now!</h5>
+                  <img src={Arrow} alt="" />
+                </div>
+              </a>
             </div>
             <div className="links">{render}</div>
           </div>

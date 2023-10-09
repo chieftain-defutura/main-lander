@@ -3,10 +3,14 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  @media (max-width: 420px) {
+    gap: 0;
+  }
   .slick-dots {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
   }
   .heroslider-wrapper {
     display: flex;

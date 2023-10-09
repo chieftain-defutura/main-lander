@@ -18,6 +18,9 @@ const OurVision: React.FC = () => {
             <h5>
               <span>“DECENTRALIZATION”</span>
             </h5>
+            <div className="responsive-image">
+              <img src={ImageOne} alt="" />
+            </div>
             <p>
               "To liberate the native youths of nations, to become emotionally
               intelligent, financially secure and physically significant and
@@ -26,15 +29,18 @@ const OurVision: React.FC = () => {
             </p>
           </div>
           <div className="image">
-            <img src={ImageOne} alt="ImageOne" />
+            <img src={ImageOne} alt="" />
           </div>
         </div>
         <div className="our-mission-wrpper">
           <div className="image">
-            <img src={ImageTwo} alt="ImageTwo" />
+            <img src={ImageTwo} alt="" />
           </div>
           <div className="our-mission-content">
             <h2>Our mission.</h2>
+            <div className="responsive_image">
+              <img src={ImageTwo} alt="" />
+            </div>
             <div className="our-mission-container">
               <h1>01</h1>
               <p style={{ marginBottom: "4px" }}>

@@ -1,10 +1,17 @@
 .origin-wrapper {
   background: var(--background-three);
+  border-bottom: 1px solid var(--background-three);
 
   .origin {
     background: var(--background-one);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
     padding: 64px 0;
+    @media (max-width: 920px) {
+      padding: 32px 0;
+    }
+    @media (max-width: 768px) {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+    }
   }
   .origin-container {
     display: flex;
@@ -14,9 +21,26 @@
     h2 {
       text-align: center;
       padding: 24px 0;
+      font-weight: 100;
     }
     p {
       text-align: center;
+    }
+  }
+  .responsive-second-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    video {
+      max-width: 568px;
+      width: 100%;
+      max-height: 686px;
+      height: 100%;
+      object-fit: contain;
     }
   }
   .origin-content {
@@ -31,6 +55,8 @@
     .first-item {
       height: 750px;
       overflow-y: scroll;
+      padding-bottom: 30px;
+
       &::-webkit-scrollbar {
         width: 5px;
       }
@@ -45,6 +71,9 @@
         top: 64px;
         left: 11px;
         bottom: 64px;
+        @media (max-width: 420px) {
+          height: 480px;
+        }
       }
 
       .flex-item {
@@ -60,6 +89,9 @@
           font-size: 32px;
           padding: 17px 0;
           font-weight: 100;
+          @media (max-width: 420px) {
+            font-size: 28px;
+          }
         }
         p {
           margin-bottom: 32px;
@@ -67,6 +99,9 @@
       }
     }
     .second-item {
+      @media (max-width: 768px) {
+        display: none;
+      }
       video {
         max-width: 568px;
         width: 100%;
