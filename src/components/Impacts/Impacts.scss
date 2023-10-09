@@ -1,11 +1,14 @@
 .impacts-wrapper {
   background: var(--background-two);
   padding: 64px 0;
-
+  @media (max-width: 750px) {
+    padding: 0;
+  }
   .impacts-container {
     display: flex;
     align-items: center;
     gap: 40px;
+
     @media (max-width: 450px) {
       text-align: center;
       padding: 32px 24px;
