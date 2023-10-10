@@ -1,0 +1,39 @@
+.social-media-wrapper {
+  background: var(--background-one);
+  padding: 64px 0;
+  .social-media-container {
+    h4 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 32px;
+      font-weight: 100;
+    }
+  }
+  .social-media-flex-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 16px;
+
+    .flex-item {
+      gap: 8px;
+      cursor: pointer;
+
+      p {
+        font-size: 20px;
+        color: var(--text-tertiary);
+      }
+    }
+  }
+  .boder-bottom {
+    border-bottom: 1px solid var(--border);
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}
