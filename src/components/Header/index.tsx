@@ -72,7 +72,7 @@ const Header: React.FC = () => {
             <img src={Access} alt="" className="access-img" />
           </div>
           <a
-            href="https://main-lander.netlify.app/"
+            href="https://charter-lander.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >

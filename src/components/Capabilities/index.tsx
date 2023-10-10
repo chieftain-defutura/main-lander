@@ -71,7 +71,7 @@ const Capabilities: React.FC = () => {
           </div>
 
           <a
-            href="https://main-lander.netlify.app/"
+            href="https://charter-lander.netlify.app/"
             target="_blank"
             rel="noreferrer"
             className="know-more-btn"
@@ -129,7 +129,7 @@ const Capabilities: React.FC = () => {
             </div>
           </div>
           <a
-            href="https://main-lander.netlify.app/"
+            href="https://charter-lander.netlify.app/"
             target="_blank"
             rel="noreferrer"
             className="know-more-btn"
