@@ -105,6 +105,9 @@ button.slick-arrow.slick-prev::before {
   color: #ffffff !important;
   opacity: 1 !important;
   font-size: 0px;
+  @media (max-width: 520px) {
+    display: none;
+  }
 }
 
 .slick-dots li button::before {

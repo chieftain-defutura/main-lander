@@ -4,6 +4,9 @@
   @media (max-width: 768px) {
     padding: 32px;
   }
+  @media (max-width: 420px) {
+    padding-bottom: 0;
+  }
   .success-stories-container {
     h4 {
       text-align: center;
@@ -60,6 +63,7 @@
         }
         @media (max-width: 420px) {
           padding: 22px;
+          margin-bottom: 0px;
         }
         .profile-img {
           @media (max-width: 968px) {
