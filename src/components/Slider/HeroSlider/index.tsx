@@ -21,7 +21,7 @@ const data = [
   SlideImgOne,
 ];
 
-const HeroSlider = () => {
+const HeroSlider: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const handlePreviousClick = () => {
@@ -53,7 +53,7 @@ const HeroSlider = () => {
       <div className="heroslider-wrapper">
         <div className="image-container prev" onClick={handlePreviousClick}>
           <div className="image"></div>
-          <img src={data[currentPage - 1]} alt={`Image ${currentPage - 1}`} />
+          <img src={data[currentPage - 1]} alt={`${currentPage - 1}`} />
         </div>
         <div className="image-container current">
           <img
@@ -68,7 +68,7 @@ const HeroSlider = () => {
           onClick={handleNextClick}
         >
           <div className="image"></div>
-          <img src={data[currentPage + 1]} alt={`Image ${currentPage + 1}`} />
+          <img src={data[currentPage + 1]} alt={`${currentPage + 1}`} />
         </div>
       </div>
 
