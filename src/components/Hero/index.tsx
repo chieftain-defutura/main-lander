@@ -11,9 +11,27 @@ const Hero: React.FC = () => {
     <div className="social-media">
       <p>Follow us on</p>
       <div className="icons">
-        <Instagram />
-        <Linkedin />
-        <Twitter />
+        <a
+          href="https://www.instagram.com/reel/CyBdIIYPlWc/?igshid=MzRlODBiNWFlZA=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Instagram />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/dewallstreet-capital/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Linkedin />
+        </a>
+        <a
+          href="https://twitter.com/Dewallstreet_"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Twitter />
+        </a>
       </div>
     </div>
   );
@@ -32,7 +50,11 @@ const Hero: React.FC = () => {
                 path towards a brighter and more promising future. Get trained
                 from now for your upgraded tomorrow. 
               </p>
-              <a href="/">
+              <a
+                href="https://main-lander.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="enroll">
                   <h5>Enroll now!</h5>
                   <img src={Arrow} alt="" />
