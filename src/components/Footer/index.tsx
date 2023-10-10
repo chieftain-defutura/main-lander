@@ -27,7 +27,9 @@ const Footer: React.FC = () => {
               <Phone />
             </div>
             <div>
-              <p>+91 44356 72539 / +91 44356 72539</p>
+              <a href="tel:+4435672539">
+                <p>+91 44356 72539 / +91 44356 72539</p>
+              </a>
             </div>
           </div>
           <div className="address-content">
@@ -35,7 +37,9 @@ const Footer: React.FC = () => {
               <Mail />
             </div>
             <div>
-              <p>connect@dewallstreet.capital</p>
+              <a href="mailto:chief.literacies@dehustle.institute">
+                <p>chief.literacies@dehustle.institute</p>
+              </a>
             </div>
           </div>
         </div>
