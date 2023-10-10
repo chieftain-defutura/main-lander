@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import { ReactComponent as ChevronRight } from "../../../assets/icons/chevron-right.svg";
 import { ReactComponent as ChevronLeft } from "../../../assets/icons/chevron-left.svg";
 import TwitterImgOne from "../../../assets/images/twitter-img-1.jpg";
-import TwitterImgTwo from "../../../assets/images/twitter-img-2.jpg";
-import TwitterImgThree from "../../../assets/images/twitter-img-3.jpg";
+// import TwitterImgTwo from "../../../assets/images/twitter-img-2.jpg";
+// import TwitterImgThree from "../../../assets/images/twitter-img-3.jpg";
 import "./Twitter.scss";
 
 const Twitter: React.FC = () => {
