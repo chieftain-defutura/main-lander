@@ -10,7 +10,7 @@ import "./Capabilities.scss";
 
 const Capabilities: React.FC = () => {
   return (
-    <div className="capabilities-wrapper">
+    <div className="capabilities-wrapper" id="capabilities">
       <div className="mx pad">
         <div className="capabilities-container">
           <h4>

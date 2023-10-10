@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
     </div>
   );
   return (
-    <div className="hero-container">
+    <div className="hero-container" id="over-view">
       <div className="mx">
         <div className="hero-wrapper">
           <div className="container-one">
