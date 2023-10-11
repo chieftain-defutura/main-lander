@@ -11,6 +11,9 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    @media (max-width: 420px) {
+      display: none;
+    }
   }
   .heroslider-wrapper {
     display: flex;
