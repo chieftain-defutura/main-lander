@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     gap: 42px;
+    @media (max-width: 720px) {
+      gap: 0;
+    }
     .arrow {
       border-radius: 50%;
       background: #2b2b2b;

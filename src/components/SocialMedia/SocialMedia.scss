@@ -22,10 +22,18 @@
     .flex-item {
       gap: 8px;
       cursor: pointer;
+      svg {
+        @media (max-width: 420px) {
+          width: 14px;
+        }
+      }
 
       p {
         font-size: 20px;
         color: var(--text-tertiary);
+        @media (max-width: 420px) {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import SuccessStories from "./components/SuccessStories";
-// import SocialMedia from "./components/SocialMedia";
+import SocialMedia from "./components/SocialMedia";
 // import InfrasctructureSlider from "./components/Slider/InfrastructureSlider";
 // import HeroSlider from "./components/Slider/HeroSlider";
 
@@ -21,7 +21,7 @@ const App: React.FC = () => {
       <OurVision />
       <Capabilities />
       <SuccessStories />
-      {/* <SocialMedia /> */}
+      <SocialMedia />
       <Footer />
       {/* <HeroSlider /> */}
     </div>
