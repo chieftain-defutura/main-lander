@@ -89,7 +89,7 @@ const Twitter: React.FC = () => {
     <div className="instagramPost-wrapper">
       <div className="instagram-slider-content">
         <div
-          className="arrow"
+          className="left-arrow"
           style={{ cursor: "pointer" }}
           onClick={() => ref.current?.slickPrev()}
         >
@@ -107,7 +107,7 @@ const Twitter: React.FC = () => {
           </div>
         </div>
         <div
-          className="arrow"
+          className="right-arrow"
           style={{ cursor: "pointer" }}
           onClick={() => ref.current?.slickNext()}
         >

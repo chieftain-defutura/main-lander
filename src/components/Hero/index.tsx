@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
                 from now for your upgraded tomorrow. 
               </p>
               <a
-                href="https://main-lander.netlify.app/"
+                href="https://charter-lander.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >

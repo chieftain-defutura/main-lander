@@ -7,14 +7,31 @@
     @media (max-width: 720px) {
       gap: 0;
     }
-    .arrow {
+    .left-arrow {
       border-radius: 50%;
       background: #2b2b2b;
       padding: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (max-width: 420px) {
+        position: absolute;
+        left: 20px;
+      }
     }
+    .right-arrow {
+      border-radius: 50%;
+      background: #2b2b2b;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 420px) {
+        position: absolute;
+        right: 20px;
+      }
+    }
+
     .insta-slick-slider-wrapper {
       max-width: 300px;
       width: 100%;
@@ -24,6 +41,14 @@
         align-items: center;
         justify-content: center;
         video {
+          max-width: 200px;
+          width: 100%;
+          max-height: 400px;
+          height: 100%;
+          object-fit: contain;
+          margin: 0 auto;
+        }
+        img {
           max-width: 200px;
           width: 100%;
           max-height: 400px;

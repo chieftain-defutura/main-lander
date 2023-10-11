@@ -1,6 +1,9 @@
 .social-media-wrapper {
   background: var(--background-one);
   padding: 64px 0;
+  @media (max-width: 420px) {
+    padding: 24px 0 0 0;
+  }
   .social-media-container {
     h4 {
       text-align: center;
