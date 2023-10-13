@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ReactComponent as CloseIcon } from "../../assets/icons/close.svg";
 import Logo from "../../assets/logos/header-logo.png";
 import Access from "../../assets/icons/access.png";
+import AccessTwo from "../../assets/images/access-two.png";
 import Arrow from "../../assets/icons/Arrow.svg";
 import "./Header.scss";
 import LayoutModule from "../layoutModule";
@@ -66,10 +67,10 @@ const Header: React.FC = () => {
           </div>
           <div className="access-modal">
             <div className="responsive-img">
-              <img src={Access} alt="" className="responsive-access-img" />
+              <img src={AccessTwo} alt="" className="responsive-access-img" />
             </div>
             <h2>Enroll now to get access.</h2>
-            <img src={Access} alt="" className="access-img" />
+            <img src={AccessTwo} alt="" className="access-img" />
           </div>
           <a
             href="https://charter-lander.netlify.app/"

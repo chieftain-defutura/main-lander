@@ -77,6 +77,8 @@
     }
     h2 {
       font-weight: 100;
+      max-width: 350px;
+      width: 100%;
       @media (max-width: 420px) {
         font-size: 26px;
       }

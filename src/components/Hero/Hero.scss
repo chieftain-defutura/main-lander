@@ -1,7 +1,8 @@
 .hero-container {
   background: var(--background-one);
   .hero-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 0 128px;
     gap: 24px;
@@ -9,6 +10,7 @@
       padding: 32px;
     }
     @media (max-width: 780px) {
+      display: flex;
       text-align: center;
       flex-direction: column;
     }
@@ -22,9 +24,6 @@
         gap: 24px;
         @media (max-width: 780px) {
           align-items: center;
-        }
-        h2 {
-          font-weight: 100;
         }
         h5 {
           color: var(--green);
@@ -46,8 +45,8 @@
         }
         .enroll {
           display: flex;
-          align-items: center;
-          gap: 12px;
+          gap: 9px;
+          cursor: pointer;
         }
       }
       .links {
@@ -56,13 +55,13 @@
         }
       }
     }
+    .container-two {
+      width: 100%;
+    }
     .social-media {
       display: flex;
       flex-direction: column;
       gap: 16px;
-      p {
-        text-transform: uppercase;
-      }
       .icons {
         display: flex;
         gap: 32px;
