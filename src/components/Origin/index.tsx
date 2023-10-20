@@ -6,7 +6,7 @@ import "./Origin.scss";
 
 const Origin: React.FC = () => {
   return (
-    <div className="origin-wrapper" id="origin">
+    <div className="origin-wrapper">
       <div className="origin">
         <div className="mx pad">
           <div className="origin-container">

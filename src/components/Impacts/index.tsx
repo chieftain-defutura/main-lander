@@ -1,10 +1,10 @@
 import React from "react";
-import "./Impacts.scss";
 import { ImpactsData } from "../../utils/data/ImpactData";
+import "./Impacts.scss";
 
 const Impacts: React.FC = () => {
   return (
-    <div className="impacts-wrapper" id="impacts">
+    <div className="impacts-wrapper">
       <div className="mx pad">
         <div className="impacts-container">
           <div className="container-one">

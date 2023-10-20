@@ -4,6 +4,7 @@
   padding: 0 32px;
   @media (max-width: 420px) {
     padding: 0 12px;
+    border-bottom: none;
   }
   .header-wrapper {
     display: flex;
@@ -26,6 +27,9 @@
       }
       @media (max-width: 768px) {
         display: none;
+      }
+      a p {
+        font-family: "Gilroy-Medium";
       }
     }
     .access {

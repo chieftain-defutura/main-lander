@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactComponent as Arrow } from "../../assets/icons/Arrow.svg";
 import { ReactComponent as Seat } from "../../assets/icons/seat-svgrepo-com 1.svg";
 import { ReactComponent as StopWatch } from "../../assets/icons/stopwatch-svgrepo-com 1.svg";
 import { ReactComponent as BooksBook } from "../../assets/icons/books-book-svgrepo-com 1.svg";
@@ -10,7 +9,7 @@ import "./Capabilities.scss";
 
 const Capabilities: React.FC = () => {
   return (
-    <div className="capabilities-wrapper" id="capabilities">
+    <div className="capabilities-wrapper">
       <div className="mx pad">
         <div className="capabilities-container">
           <h4>
@@ -38,17 +37,19 @@ const Capabilities: React.FC = () => {
                   <h4>I - IX</h4>
                   <p>coaching classes.</p>
                 </div>
+                <div className="border-left"></div>
                 <div>
                   <h4>IX - XII</h4>
                   <p>Special classes.</p>
                 </div>
+                <div className="border-left"></div>
                 <div>
                   <h4>X - XII</h4>
                   <p>Practical classes.</p>
                 </div>
               </div>
             </div>
-            <div className="content">
+            <div className="content responsive">
               <div className="student-img">
                 <img src={ImageFour} alt="" />
               </div>
@@ -58,10 +59,12 @@ const Capabilities: React.FC = () => {
                   <h4>I - IX</h4>
                   <p>coaching classes.</p>
                 </div>
+                <div className="border-left"></div>
                 <div>
                   <h4>IX - XII</h4>
                   <p>Special classes.</p>
                 </div>
+                <div className="border-left"></div>
                 <div>
                   <h4>X - XII</h4>
                   <p>Practical classes.</p>
@@ -70,7 +73,7 @@ const Capabilities: React.FC = () => {
             </div>
           </div>
 
-          <a
+          {/* <a
             href="https://charter-lander.netlify.app/"
             target="_blank"
             rel="noreferrer"
@@ -78,7 +81,7 @@ const Capabilities: React.FC = () => {
           >
             <p>Know more</p>
             <Arrow />
-          </a>
+          </a> */}
         </div>
         <div className="professional-wrapper">
           <h2>Professional academy.</h2>
@@ -123,12 +126,18 @@ const Capabilities: React.FC = () => {
                   <h3>09 months</h3>
                 </div>
               </div>
-              <div className="enroll-now">
-                <button>Enroll now !</button>
-              </div>
+              <a
+                href="https://charter-lander.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="enroll-now">
+                  <button>Enroll now !</button>
+                </div>
+              </a>
             </div>
           </div>
-          <a
+          {/* <a
             href="https://charter-lander.netlify.app/"
             target="_blank"
             rel="noreferrer"
@@ -136,7 +145,7 @@ const Capabilities: React.FC = () => {
           >
             <p>Know more</p>
             <Arrow />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

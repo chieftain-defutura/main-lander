@@ -6,6 +6,7 @@ import AccessTwo from "../../assets/images/access-two.png";
 import Arrow from "../../assets/icons/Arrow.svg";
 import "./Header.scss";
 import LayoutModule from "../layoutModule";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [active, setIsActive] = useState(false);
@@ -26,18 +27,19 @@ const Header: React.FC = () => {
               <img src={Logo} alt="" />
             </div>
             <div className="navigation-content">
-              <a href="#over-view">
-                <p>Overview</p>
+              <Link to="/">
+                <p>Home</p>
+              </Link>
+              <a
+                href="https://charter-lander.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>Charter</p>
               </a>
-              <a href="#impacts">
-                <p>Impacts</p>
-              </a>
-              <a href="#origin">
-                <p>Origin</p>
-              </a>
-              <a href="#capabilities">
-                <p>Capabilities</p>
-              </a>
+              <Link to="/coming-soon">
+                <p>Workshop</p>
+              </Link>
             </div>
             <div className="access" onClick={handleToggle}>
               <img src={Access} alt="" />
@@ -47,17 +49,15 @@ const Header: React.FC = () => {
         </div>
       </div>
       <div className="responsive-header-navigation">
-        <a href="#over-view">
-          <p>Overview</p>
-        </a>
-        <a href="#impacts">
-          <p>Impacts</p>
-        </a>
-        <a href="#origin">
-          <p>Origin</p>
-        </a>
-        <a href="#capabilities">
-          <p>Capabilities</p>
+        <Link to="/">
+          <p>Home</p>
+        </Link>
+        <a
+          href="https://charter-lander.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <p>Charter</p>
         </a>
       </div>
       {active && (

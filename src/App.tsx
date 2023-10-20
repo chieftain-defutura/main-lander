@@ -1,30 +1,20 @@
 import React from "react";
-import Impacts from "./components/Impacts";
-import Origin from "./components/Origin";
-import OurVision from "./components/OurVision";
-import Capabilities from "./components/Capabilities";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import ComingSoon from "./pages/ComingSoon";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import SuccessStories from "./components/SuccessStories";
-import SocialMedia from "./components/SocialMedia";
-// import InfrasctructureSlider from "./components/Slider/InfrastructureSlider";
-// import HeroSlider from "./components/Slider/HeroSlider";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Hero />
-      <Impacts />
-      <Origin />
-      <OurVision />
-      <Capabilities />
-      <SuccessStories />
-      <SocialMedia />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+      </Routes>
       <Footer />
-      {/* <HeroSlider /> */}
-    </div>
+    </>
   );
 };
 

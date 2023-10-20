@@ -71,6 +71,7 @@
         top: 64px;
         left: 11px;
         bottom: 64px;
+        z-index: -1000;
         @media (max-width: 420px) {
           height: 480px;
         }

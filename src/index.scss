@@ -38,38 +38,13 @@ body {
 .pad {
   padding: 0 160px;
   @media (max-width: 920px) {
-    padding: 32px;
+    padding: 26px;
   }
 }
 
 .flex-item {
   display: flex;
   align-items: center;
-}
-
-.text-coloring {
-  // background: linear-gradient(to right, #293eff 0%, #8f00ff 45%, #ff7a00 100%);
-  // -webkit-background-clip: text;
-  // background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  background: radial-gradient(
-    2174.18% 106.55% at 3.23% 25.96%,
-    #293eff 0%,
-    #2d3cff 0.01%,
-    #6619ff 27.49%,
-    #8506ff 42.6%,
-    #8f00ff 47.05%,
-    #9b0ee2 53.01%,
-    #b025b3 62.91%,
-    #cd4471 76.45%,
-    #ea6330 90%,
-    #f56f17 95.2%,
-    #ff7a00 100%,
-    #0047ff 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 :root {
@@ -165,11 +140,11 @@ h3 {
 
 p {
   color: var(--text-tertiary);
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Medium";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
   letter-spacing: 0.28px;
   @media (max-width: 700px) {
     font-size: 12px;
@@ -179,29 +154,24 @@ p {
 span {
   font-family: "Gilroy-Medium";
   font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   width: fit-content;
-  background: var(
-    --dehustle,
-    radial-gradient(
-      2174.18% 106.55% at 3.23% 25.96%,
-      #293eff 0%,
-      #2d3cff 0.01%,
-      #6619ff 27.49%,
-      #8506ff 42.6%,
-      #8f00ff 47.05%,
-      #9b0ee2 53.01%,
-      #b025b3 62.91%,
-      #cd4471 76.45%,
-      #ea6330 90%,
-      #f56f17 95.2%,
-      #ff7a00 100%,
-      #0047ff 100%
-    )
+  background: linear-gradient(
+    to right,
+    #293eff 0%,
+    #2d3cff 0.01%,
+    #6619ff 27.49%,
+    #8506ff 42.6%,
+    #8f00ff 47.05%,
+    #9b0ee2 53.01%,
+    #b025b3 62.91%,
+    #cd4471 76.45%,
+    #ea6330 90%,
+    #f56f17 95.2%,
+    #ff7a00 100%,
+    #0047ff 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
