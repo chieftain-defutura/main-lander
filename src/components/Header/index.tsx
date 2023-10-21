@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ReactComponent as CloseIcon } from "../../assets/icons/close.svg";
 import { ReactComponent as UserIcon } from "../../assets/icons/user.svg";
 import { ReactComponent as LockIcon } from "../../assets/icons/lock-icon.svg";
+import { ReactComponent as WhatsAppIcon } from "../../assets/icons/whatsapp-icon.svg";
 import Logo from "../../assets/logos/header-logo.png";
 import Access from "../../assets/icons/access.png";
 import AccessTwo from "../../assets/images/access-two.png";
@@ -25,11 +26,13 @@ const Header: React.FC = () => {
         <div className="mx">
           <div className="header-wrapper">
             <div className="image">
-              <img src={Logo} alt="" />
+              <Link to="/">
+                <img src={Logo} alt="" />
+              </Link>
             </div>
             <div className="navigation-content">
               <Link to="/">
-                <p>Home</p>
+                <p style={{ color: "#fff" }}>Home</p>
               </Link>
               <a
                 href="https://charter-lander.netlify.app/"
@@ -38,9 +41,13 @@ const Header: React.FC = () => {
               >
                 <p>Charter</p>
               </a>
-              <Link to="/coming-soon">
+              <a
+                href="https://www.workshop.dehustle.institute/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <p>Workshop</p>
-              </Link>
+              </a>
             </div>
             <div className="access" onClick={handleToggle}>
               <img src={Access} alt="" />
@@ -103,6 +110,11 @@ const Header: React.FC = () => {
           </div>
         </LayoutModule>
       )}
+      <div className="whatsapp-icon">
+        <a href="https://wa.me/7305151795" target="_blank" rel="noreferrer">
+          <WhatsAppIcon />
+        </a>
+      </div>
     </>
   );
 };
