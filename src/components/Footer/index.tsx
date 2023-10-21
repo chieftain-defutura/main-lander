@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="address-content">
             <div>
-              <Location />
+              <Location width={20} height={20} />
             </div>
             <div className="address">
               <p>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="address-content">
             <div>
-              <Phone />
+              <Phone width={20} height={20} />
             </div>
             <div>
               <a href="tel:+4435672539">
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="address-content">
             <div>
-              <Mail />
+              <Mail width={20} height={20} />
             </div>
             <div>
               <a href="mailto:chief.literacies@dehustle.institute">
