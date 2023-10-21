@@ -59,6 +59,9 @@ const Header: React.FC = () => {
         >
           <p>Charter</p>
         </a>
+        <Link to="/coming-soon">
+          <p>Workshop</p>
+        </Link>
       </div>
       {active && (
         <LayoutModule handleToggle={handleToggle} className="layout-module">

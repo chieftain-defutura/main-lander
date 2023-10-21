@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       <p>Follow us on</p>
       <div className="icons">
         <a
-          href="https://www.instagram.com/reel/CyBdIIYPlWc/?igshid=MzRlODBiNWFlZA=="
+          href="https://instagram.com/dehustle.institute?igshid=MzNlNGNkZWQ4Mg=="
           target="_blank"
           rel="noreferrer"
         >
