@@ -71,48 +71,81 @@
   }
 }
 .layout-module {
-  padding: 0 18px 32px 32px;
-
-  .access-modal {
+  padding: 0 24px 24px;
+  .access-img {
     display: flex;
     align-items: center;
-    @media (max-width: 560px) {
-      display: block;
-    }
-    h2 {
-      font-weight: 100;
-      max-width: 350px;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-top: -10px;
+    img {
+      max-width: 116px;
       width: 100%;
-      @media (max-width: 420px) {
-        font-size: 26px;
-      }
+      max-height: 116px;
+      height: 100%;
+      object-fit: contain;
     }
-    .responsive-img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      .responsive-access-img {
-        max-width: 116px;
-        width: 100%;
-        max-height: 116px;
-        height: 100%;
-        @media (min-width: 560px) {
-          display: none;
+  }
+  .input-wrapper {
+    .input-container {
+      label {
+        color: #fff;
+        font-family: "Gilroy-Medium";
+        font-size: 14px;
+        letter-spacing: 0.8px;
+      }
+      .student-id {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px;
+        border: 1px solid #1e1e1e;
+        margin-top: 8px;
+        width: 296px;
+
+        input {
+          outline: none;
+          border: none;
+          background: transparent;
+          font-family: "Gilroy-Medium";
+          font-size: 14px;
+          color: #fff;
+          width: 100%;
         }
       }
     }
+    .login-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      border: 1px solid #00a140;
+      cursor: pointer;
 
-    .access-img {
-      max-width: 160px;
-      width: 100%;
-      max-height: 160px;
-      height: 100%;
-      @media (max-width: 560px) {
-        display: none;
+      button {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #00a140;
+        font-size: 14px;
+        font-family: "Gilroy-Medium";
+      }
+    }
+    .account-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+      p {
+        color: #fff;
+        font-size: 14px;
+        font-family: "Gilroy-Medium";
       }
     }
   }
+
   .enroll {
     display: flex;
     align-items: center;

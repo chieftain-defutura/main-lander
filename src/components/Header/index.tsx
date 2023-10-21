@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { ReactComponent as CloseIcon } from "../../assets/icons/close.svg";
+import { ReactComponent as UserIcon } from "../../assets/icons/user.svg";
+import { ReactComponent as LockIcon } from "../../assets/icons/lock-icon.svg";
 import Logo from "../../assets/logos/header-logo.png";
 import Access from "../../assets/icons/access.png";
 import AccessTwo from "../../assets/images/access-two.png";
-import Arrow from "../../assets/icons/Arrow.svg";
 import "./Header.scss";
 import LayoutModule from "../layoutModule";
 import { Link } from "react-router-dom";
@@ -68,23 +69,38 @@ const Header: React.FC = () => {
           <div className="close-icon" onClick={handleClose}>
             <CloseIcon />
           </div>
-          <div className="access-modal">
-            <div className="responsive-img">
-              <img src={AccessTwo} alt="" className="responsive-access-img" />
-            </div>
-            <h2>Enroll now to get access.</h2>
-            <img src={AccessTwo} alt="" className="access-img" />
+          <div className="access-img">
+            <img src={AccessTwo} alt="" />
           </div>
-          <a
-            href="https://charter-lander.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="enroll">
-              <h5>Enroll now!</h5>
-              <img src={Arrow} alt="" />
+          <div className="input-wrapper">
+            <div className="input-container">
+              <label htmlFor="">Student ID</label>
+              <div className="student-id">
+                <UserIcon />
+                <input type="text" placeholder="Student ID" />
+              </div>
             </div>
-          </a>
+            <div className="input-container" style={{ margin: "24px 0" }}>
+              <label htmlFor="">Password</label>
+              <div className="student-id">
+                <LockIcon />
+                <input type="password" placeholder="Password" />
+              </div>
+            </div>
+            <div className="login-btn">
+              <button>Log in</button>
+            </div>
+            <div className="account-wrapper">
+              <p>Don’t have an account?</p>
+              <a
+                href="https://charter-lander.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p style={{ color: "#00A140" }}>Enroll now!</p>
+              </a>
+            </div>
+          </div>
         </LayoutModule>
       )}
     </>
