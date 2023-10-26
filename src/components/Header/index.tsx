@@ -67,9 +67,13 @@ const Header: React.FC = () => {
         >
           <p>Charter</p>
         </a>
-        <Link to="/coming-soon">
+        <a
+          href="https://www.workshop.dehustle.institute/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <p>Workshop</p>
-        </Link>
+        </a>
       </div>
       {active && (
         <LayoutModule handleToggle={handleToggle} className="layout-module">
