@@ -12,8 +12,7 @@ const SuccessStory: React.FC<{
   class: string;
   description: string;
   schoolTopper: string;
-  year: string;
-}> = ({ image, name, class: className, description, schoolTopper, year }) => {
+}> = ({ image, name, class: className, description, schoolTopper }) => {
   return (
     <div className="success-story">
       <div className="profile-img">
@@ -30,7 +29,6 @@ const SuccessStory: React.FC<{
             <TropyIcon />
             <h5>{schoolTopper}</h5>
           </div>
-          <p>{year}</p>
         </div>
       </div>
     </div>
@@ -76,7 +74,6 @@ const SuccessStories: React.FC = () => {
                       class={story.class}
                       description={story.description}
                       schoolTopper={story.schoolTopper}
-                      year={story.year}
                     />
                   </div>
                 ))}
