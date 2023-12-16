@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { ReactComponent as TropyIcon } from "../../assets/icons/tropyIcon.svg";
 import { ReactComponent as ChevronRight } from "../../assets/icons/chevron-right.svg";
 import { ReactComponent as ChevronLeft } from "../../assets/icons/chevron-left.svg";
@@ -13,6 +13,12 @@ const SuccessStory: React.FC<{
   description: string;
   schoolTopper: string;
 }> = ({ image, name, class: className, description, schoolTopper }) => {
+  const [showFullText, setShowFullText] = useState(false);
+
+  const toggleText = () => {
+    setShowFullText(!showFullText);
+  };
+
   return (
     <div className="success-story">
       <div className="profile-img">
@@ -21,8 +27,23 @@ const SuccessStory: React.FC<{
       <div className="details">
         <h3>{name}</h3>
         <p>{className}</p>
-        <p style={{ marginTop: "24px", letterSpacing: "0.28px" }}>
+        {/* <p style={{ marginTop: "24px", letterSpacing: "0.28px" }}>
           {description}
+        </p> */}
+        <p
+          style={{
+            marginTop: "24px",
+            letterSpacing: "0.28px",
+            cursor: "pointer",
+          }}
+        >
+          {showFullText ? description : `${description.slice(0, 300)}...`}
+          <strong
+            style={{ color: "white", fontWeight: 100 }}
+            onClick={toggleText}
+          >
+            {showFullText ? " Read less" : " Read more"}
+          </strong>
         </p>
         <div className="school-topper-text">
           <div className="flex-item">
