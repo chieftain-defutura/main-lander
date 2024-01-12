@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
             </div>
             <div className="address">
               <p>
-                Jalani Towers,No.1, Plot No.2-A, Gandhi Main Road, Shankar
-                Nagar, Pammal, Chennai-600 075
+                Jalani Towers,No.1, Plot No.2-A, Gandhi Main Road, Shankar Nagar, Pammal,
+                Chennai-600 075
               </p>
               {/* <p>East Tambaram, Selaiyur Post, Tamilnadu - 600 059, India.</p> */}
             </div>
@@ -47,7 +47,12 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="copy-right">
-          <p>Terms & policies</p>
+          <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+            Terms & conditions
+          </a>
+          <a href="/refund-policy" target="_blank" rel="noopener noreferrer">
+            Refund Policy
+          </a>
           <p>Copyright © 2022 Dehustle ® All right reserved</p>
         </div>
       </div>

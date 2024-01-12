@@ -54,15 +54,26 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+    margin-top: 32px;
+
     @media (max-width: 556px) {
-      display: block;
+      flex-wrap: wrap;
+      gap: 16px;
     }
     p {
-      margin-top: 32px;
       @media (max-width: 556px) {
-        margin-top: 18px;
         text-align: center;
       }
+    }
+
+    a {
+      color: var(--text-tertiary);
+      font-family: "Gilroy-Medium";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.28px;
     }
   }
 }
