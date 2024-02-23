@@ -48,6 +48,9 @@ const Header: React.FC = () => {
               >
                 <p>Workshop</p>
               </a>
+              <a href="https://results-dehustle-institute.netlify.app/">
+                <p>View Results</p>
+              </a>
             </div>
             <div className="access" onClick={handleToggle}>
               <img src={Access} alt="" />
@@ -75,7 +78,7 @@ const Header: React.FC = () => {
           <p>Workshop</p>
         </a>
         <a href="https://results-dehustle-institute.netlify.app/">
-          View Results
+          <p>View Results</p>
         </a>
       </div>
       {active && (
