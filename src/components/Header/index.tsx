@@ -74,6 +74,9 @@ const Header: React.FC = () => {
         >
           <p>Workshop</p>
         </a>
+        <a href="https://results-dehustle-institute.netlify.app/">
+          View Results
+        </a>
       </div>
       {active && (
         <LayoutModule handleToggle={handleToggle} className="layout-module">
