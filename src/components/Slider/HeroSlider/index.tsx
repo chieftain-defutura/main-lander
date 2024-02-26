@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SlideImgOne from "../../../assets/images/hero-img-1.png";
 import SlideImgTwo from "../../../assets/images/hero-img-2.png";
-import SlideImgThree from "../../../assets/images/hero-img-3.png";
+import SlideImgThree from "../../../assets/images/de-group-2.jpg";
 import "./HeroSlider.scss";
 
 const HeroSlider: React.FC = () => {

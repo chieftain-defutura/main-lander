@@ -1,5 +1,5 @@
 import React from "react";
-import ImageOne from "../../assets/images/image-1.png";
+import ImageOne from "../../assets/images/de-img.jpg";
 import ImageTwo from "../../assets/images/image-2.png";
 import { ReactComponent as SchoolPlanner } from "../../assets/icons/school-planner-svgrepo-com 1.svg";
 import { ReactComponent as Graduate } from "../../assets/icons/graduate-cap-svgrepo-com 2.svg";

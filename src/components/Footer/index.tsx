@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
             </div>
             <div className="address">
               <p>
-                Jalani Towers,No.1, Plot No.2-A, Gandhi Main Road, Shankar Nagar, Pammal,
-                Chennai-600 075
+                Jalani Towers,No.1, Plot No.2-A, Gandhi Main Road, Shankar
+                Nagar, Pammal, Chennai-600 075
               </p>
               {/* <p>East Tambaram, Selaiyur Post, Tamilnadu - 600 059, India.</p> */}
             </div>
@@ -30,8 +30,8 @@ const Footer: React.FC = () => {
               <Phone width={20} height={20} />
             </div>
             <div>
-              <a href="tel:+4435672539">
-                <p>+91 7305151795 / +91 44356 72539</p>
+              <a href="tel:+8428224546">
+                <p>+91 7305151795 / +91 8428224546 </p>
               </a>
             </div>
           </div>
@@ -47,7 +47,11 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="copy-right">
-          <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/terms-and-conditions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Terms & conditions
           </a>
           <a href="/refund-policy" target="_blank" rel="noopener noreferrer">
