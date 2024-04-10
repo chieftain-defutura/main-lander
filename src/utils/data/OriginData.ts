@@ -3,7 +3,7 @@ export const OriginData = [
     year: "2019",
     title: "Forerunner",
     description:
-      "Before dehustle Institute was established, Initially we ran a tuition.15 students who were preparing for their supplementary public examination, joined our tuition which was our first task to leverage the students to the next level. Accepting the challenge, we produced 100% results.",
+      "Before Dehustle Institute was established, Initially we ran a tuition.15 students who were preparing for their supplementary public examination, joined our tuition which was our first task to leverage the students to the next level. Accepting the challenge, we produced 100% results.",
   },
   {
     year: "2020",
@@ -21,12 +21,12 @@ export const OriginData = [
     year: "2022",
     title: "Inauguration of the New Institute",
     description:
-      "Started an institue that can train la large group of student. On the day 1 of the insitute we had 35 student, Within 6 months it scaled up to 230+ student. We provided support and services for the students who need to succeed, At this stage, we received modest support, motivating us to redouble Our efforts",
+      "Started an institute that can train a large group of student. On the day 1 of the institute we had 35 student, Within 6 months it scaled up to 230+ student. We provided support and services for the students who need to succeed, At this stage, we received modest support, motivating us to redouble Our efforts",
   },
   {
     year: "2023",
     title: "Incorporation of Institute in MCA",
     description:
-      "Our insitute is incorporated in the Ministry of Corporate Affairs. Now we are running our institute successfully and building our bridge to success.",
+      "Our institute is incorporated in the Ministry of Corporate Affairs. Now we are running our institute successfully and building our bridge to success.",
   },
 ];

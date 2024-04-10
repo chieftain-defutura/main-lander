@@ -54,17 +54,17 @@ const OurVision: React.FC = () => {
                   </div>
                   <div className="flex-item" style={{ marginTop: "12px" }}>
                     <School />
-                    <p>Academies</p>
+                    <p>Schools</p>
                   </div>
                 </div>
                 <div>
                   <div className="flex-item">
                     <Graduate />
-                    <p>Academies</p>
+                    <p>Colleges</p>
                   </div>
                   <div className="flex-item" style={{ marginTop: "12px" }}>
                     <Certificate />
-                    <p>Academies</p>
+                    <p>Universities</p>
                   </div>
                 </div>
               </div>

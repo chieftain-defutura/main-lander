@@ -7,6 +7,6 @@ export const OurMissionData = [
   {
     number: "03",
     description:
-      "To produce more & more & more excellencies generationally, with impact and outcome focused behavior pattern and limitless thinking.",
+      "To produce more & more excellencies generationally, with impact and outcome focused behavior pattern and limitless thinking.",
   },
 ];

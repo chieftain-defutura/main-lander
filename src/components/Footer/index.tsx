@@ -30,8 +30,8 @@ const Footer: React.FC = () => {
               <Phone width={20} height={20} />
             </div>
             <div>
-              <a href="tel:+8428224546">
-                <p>+91 7305151795 / +91 8428224546 </p>
+              <a href="tel:+9884017684">
+                <p>+918428224546 / +919884017684</p>
               </a>
             </div>
           </div>
